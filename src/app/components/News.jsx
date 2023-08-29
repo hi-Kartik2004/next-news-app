@@ -12,12 +12,12 @@ const News = ({topic}) => {
             console.log("Error getting an response from the API");
         })
     },[])
-    console.log(data);
+
   return (
     <section className='flex flex-col px-2 justify-center items-center'>
     <h3 className=' font-bold text-center my-4'>{topic} Updates</h3>
     <div className='news__wrapper py-5 px-2 flex flex-wrap justify-between items-center container gap-10'>
-    {data &&
+    {data ?
       data.articles.map((ele) =>
         ele.urlToImage ? (
           <div className='news__item flex flex-col max-w-[350px] w-full border-full-color p-2 rounded-xl' key={ele.id}>
@@ -45,7 +45,7 @@ const News = ({topic}) => {
             </div>
           </div>
         ) : null
-      )}
+      ) : <p className='text-center absolute left-[50%] transform -translate-x-[50%] top-[50%] -translate-y-[50%]'>Loading News...</p>}
   </div>
       </section>
   )  

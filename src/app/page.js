@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Categories from "./components/Categories";
+import News from "./components/News";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center">
+    <main>
+      <News topic={"India"}/>
     </main>
   )
 }
