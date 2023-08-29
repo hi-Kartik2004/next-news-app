@@ -26,7 +26,7 @@ const News = ({ topic }) => {
             >
               <div className="news__item--img">
                 <img
-                  src={ele.image.thumbnail.contentUrl}
+                  src={ele.image && ele.image.thumbnail.contentUrl}
                   alt={ele.name}
                   className="rounded-xl object-cover max-w-[350px] max-h-[200px] w-full h-full"
                 />
