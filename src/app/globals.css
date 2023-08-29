@@ -50,13 +50,17 @@ a:hover {
 }
 
 .category{
-    padding: 1rem;
+    padding: 0.75rem;
     background-color: var(--secondary-color);
     border-radius: 1rem;
 }
 
 .category:hover{
     background-color: var(--primary-color);
+}
+
+.mini__text{
+  font-size: 0.75rem;
 }
 
 @layer utilities {
