@@ -11,9 +11,12 @@ const Categories = () => {
     "Hollywood",
     "Sports",
   ];
+
+  const base_url = process.env.BASE_URL;
+
   const categoryButtons = categories.map((category, index) => (
     <div className="category border-full-color shadow-lg shadow-gray-500/20 shadow-x-0 shadow-y-0" key={index}>
-      <Link href={`http://localhost:3000/news/${category}`}><button className="Category__btn ">{category}</button></Link>
+      <Link href={`${base_url}/news/${category}`}><button className="Category__btn ">{category}</button></Link>
     </div>
   ));
   
