@@ -33,13 +33,13 @@ const News = ({ topic }) => {
               </div>
 
               <div className="news__item--info mt-4 text-ellipsis max-h-[110px] h-full">
-                <div className="max-h-[70px] h-full overflow-hidden text-ellipsis">
+                <div className="max-h-[50px] h-full overflow-hidden text-ellipsis">
                   <p className="text-ellipsis">{ele.name}</p>
                 </div>
                 <div className="news__item--content text-ellipsis overflow-hidden max-h-[200px] h-full mt-4">
-                  <span className="mini__text text-slate-300 truncate">
+                  <p className="text-slate-300 truncate">
                     {ele.description}
-                  </span>
+                  </p>
                 </div>
               </div>
               <div className="news__item--footer mt-4 flex justify-between">
