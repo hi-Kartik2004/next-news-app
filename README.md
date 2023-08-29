@@ -1,3 +1,8 @@
+# Screenshots
+![image](https://github.com/hi-Kartik2004/next-news-app/assets/111000515/57ed8149-d9fb-4e96-bb48-e7ecc716eb2d)
+
+## ⚠️ The deployed site will not work, as the API provider has blocked cors from production build projects and only works on local host.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
