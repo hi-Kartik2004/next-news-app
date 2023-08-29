@@ -17,7 +17,7 @@ const News = ({ topic }) => {
   return (
     <section className="flex flex-col px-2 justify-center items-center">
       <h3 className=" font-bold text-center my-4">{topic} Updates</h3>
-      <div className="news__wrapper py-5 px-2 flex flex-wrap justify-between container gap-10">
+      <div className="news__wrapper py-5 px-2 flex flex-wrap justify-center items-center container gap-10">
         {data && data.value ? (
           data.value.map((ele, index) => (
             <div

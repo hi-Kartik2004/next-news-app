@@ -6,8 +6,10 @@ import {AiFillGithub} from "react-icons/ai"
 import {PiMagnifyingGlass} from "react-icons/pi"
 
 
+
 const Navbar = () => {
   const router = useRouter();
+  const base_url = "https://hi-kartik2004-next-news.vercel.app";
 
   const [inputValue, setInputValue] = useState("");
 
@@ -20,6 +22,8 @@ const Navbar = () => {
       router.replace(`/news/${inputValue}`);
     }
   };
+
+  
 
   return (
     <nav className="px-0 py-4 md:px-8 justify-center items-center flex fixed top-0 w-full">
@@ -43,7 +47,7 @@ const Navbar = () => {
               onChange={handleInputChange}
               onKeyDown={handleEnter}
             />
-            <Link href={`http://localhost:3000/news/${inputValue}`} className="bg-primary border-full-color p-1 rounded-full"><PiMagnifyingGlass/></Link>
+            <Link href={`${base_url}/news/${inputValue}`} className="bg-primary border-full-color p-1 rounded-full"><PiMagnifyingGlass/></Link>
           </div>
           <Link href="https://github.com/hi-kartik2004/next-news-app"><AiFillGithub size={25} /></Link>
         </div>
